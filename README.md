@@ -1,72 +1,90 @@
-<<<<<<< HEAD
 # JIRA Analyzer Extension for Goose
+
+[![CI/CD](https://github.com/jpowers-hub/goose-jira-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/jpowers-hub/goose-jira-analyzer/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A secure, read-only JIRA analysis extension for Goose that provides comprehensive insights and cross-referencing capabilities.
 
-## Key Features
+## 🔒 Security First
 
-### 1. Secure Read-Only Analysis
-- Zero modification capabilities
-- Safe for production JIRA instances
-- Respects JIRA permissions model
+This extension is designed with security in mind:
+- Strictly read-only operations
+- No modification capabilities
+- Respects JIRA permissions
+- Secure authentication handling
 
-### 2. Deep Issue Analysis
-- Complete issue details including comments
-- Change history tracking
+## 🚀 Key Features
+
+### 1. Deep Issue Analysis
+- Complete issue details and history
+- Full comment threads
+- Change tracking
 - Relationship mapping
 - Cross-project references
 
-### 3. Content Analysis
+### 2. Content Analysis
 - Text pattern recognition
 - Common terms identification
 - Comment analysis
 - Label usage patterns
 
-### 4. Cross-Reference Capabilities
+### 3. Cross-Reference Capabilities
 - Project interconnections
 - Shared components
 - Issue dependencies
 - Related work tracking
 
-## Installation
+## 📋 Prerequisites
 
-1. From PyPI:
+- Python 3.9 or higher
+- Goose Desktop App
+- JIRA API access token
+
+## 🛠️ Installation
+
+### From PyPI
 ```bash
 pip install goose-jira-analyzer
 ```
 
-2. From source:
+### From Source
 ```bash
-git clone https://github.com/block/goose-jira-analyzer
+git clone https://github.com/jpowers-hub/goose-jira-analyzer
 cd goose-jira-analyzer
 pip install -e .
 ```
 
-## Usage
+## 🔧 Usage
 
 ### 1. Start Goose with the Extension
-
 ```bash
 goose session --with-extension "python -m jira_analyzer.server"
 ```
 
 ### 2. Connect to JIRA
-
 ```text
 "Connect to JIRA at https://your-domain.atlassian.net with token YOUR_API_TOKEN"
 ```
 
-### 3. Analyze Issues and Projects
-
+### 3. Example Commands
 ```text
+# Get issue details
 "Get details for issue PROJ-123"
+
+# Search issues
 "Search for issues in project PROJ with label 'important'"
+
+# Analyze relationships
 "Analyze relationships for issue PROJ-123"
+
+# Cross-project analysis
 "Find cross-project references between PROJ and PROJ2"
+
+# Content analysis
 "Analyze text content patterns in project PROJ"
 ```
 
-## Security Features
+## 🔐 Security Features
 
 ### Read-Only Guarantee
 - No modification capabilities
@@ -75,7 +93,7 @@ goose session --with-extension "python -m jira_analyzer.server"
 - Cannot change configurations
 
 ### Authentication
-- Supports API tokens (recommended)
+- API token support (recommended)
 - Optional basic auth
 - No credential storage
 - Environment variable configuration
@@ -85,80 +103,40 @@ goose session --with-extension "python -m jira_analyzer.server"
 - User-based access control
 - Project-level security
 
-## Configuration
+## ⚙️ Configuration
 
 ### Environment Variables
-- `JIRA_SERVER`: Default JIRA server URL
-- `JIRA_API_TOKEN`: Default API token
-- `JIRA_USERNAME`: Default username (if using basic auth)
-
-## Integration with Other Extensions
-
-The JIRA Analyzer can be used alongside other Goose extensions for enhanced analysis:
-
-1. **Data Analysis**
-   - Export JIRA data for analysis
-   - Generate reports and visualizations
-   - Track metrics over time
-
-2. **Cross-Referencing**
-   - Link JIRA issues to code repositories
-   - Connect with documentation
-   - Integrate with other tools
-
-## Development
-
-### Setup Development Environment
-
 ```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+# Default JIRA server URL
+export JIRA_SERVER="https://your-domain.atlassian.net"
 
-# Install development dependencies
-pip install -e ".[dev]"
+# Default API token
+export JIRA_API_TOKEN="your-api-token"
+
+# Default username (if using basic auth)
+export JIRA_USERNAME="your-username"
 ```
 
-### Running Tests
-
-```bash
-pytest
-```
-
-### Code Style
-
-```bash
-# Format code
-black .
-
-# Type checking
-mypy jira_analyzer
-```
-
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and ensure CI passes
-5. Submit a pull request
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## License
+## 📝 License
 
-MIT License - see LICENSE file for details
+Distributed under the MIT License. See `LICENSE` file for more information.
 
-## Security
+## 🔒 Security
 
 Report security issues to security@block.xyz
 
-## Support
+## 💡 Support
 
 For issues and feature requests, please use the GitHub issue tracker.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-Built by Block, Inc. for the Goose platform.
-=======
-# goose-jira-analyzer
-A secure, read-only JIRA analysis extension for Goose
->>>>>>> 8aca1df00c3d17fd075ba6eb881a7086e2a3807d
+Built with ❤️ by Block, Inc. for the Goose platform.
