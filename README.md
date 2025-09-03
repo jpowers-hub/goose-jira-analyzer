@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JIRA Analyzer Extension for Goose
 
 A secure, read-only JIRA analysis extension for Goose that provides comprehensive insights and cross-referencing capabilities.
@@ -157,3 +158,7 @@ For issues and feature requests, please use the GitHub issue tracker.
 ## Acknowledgments
 
 Built by Block, Inc. for the Goose platform.
+=======
+# goose-jira-analyzer
+A secure, read-only JIRA analysis extension for Goose
+>>>>>>> 8aca1df00c3d17fd075ba6eb881a7086e2a3807d
