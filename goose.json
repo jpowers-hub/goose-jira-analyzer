@@ -1,0 +1,31 @@
+{
+    "name": "jira-analyzer",
+    "version": "0.1.0",
+    "description": "JIRA Analysis Extension for Goose",
+    "entry_point": "server.py",
+    "requirements": ["jira>=3.5.1", "pandas>=2.0.0", "numpy>=1.24.0"],
+    "author": "Block",
+    "license": "MIT",
+    "tools": [
+        {
+            "name": "connect_to_jira",
+            "description": "Connect to Block's JIRA server using token authentication"
+        },
+        {
+            "name": "get_project_info",
+            "description": "Get basic information about a JIRA project"
+        },
+        {
+            "name": "search_jira_issues",
+            "description": "Search for JIRA issues using JQL"
+        },
+        {
+            "name": "get_issue_details",
+            "description": "Get detailed information about a specific JIRA issue"
+        },
+        {
+            "name": "analyze_project",
+            "description": "Analyze project metrics for a JIRA project"
+        }
+    ]
+}

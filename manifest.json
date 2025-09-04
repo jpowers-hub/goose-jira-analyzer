@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name": "jira-analyzer",
+    "version": "0.1.0",
+    "description": "JIRA Analysis Extension for Goose",
+    "author": "Block",
+    "license": "MIT",
+    "repository": "https://github.com/jpowers-hub/goose-jira-analyzer",
+    "type": "python",
+    "command": "python3 -m jira_analyzer.server",
+    "env": {
+        "PYTHONPATH": "${extension_dir}"
+    },
+    "capabilities": {
+        "tools": true
+    }
+}
